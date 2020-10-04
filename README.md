@@ -1,2 +1,2 @@
-# section4_3
-Another section from test automation course
+# Курс по автоматизации тестирования с помощью Python и Selenium.
+Извиняюсь за столь содержательный `requirements.txt`.

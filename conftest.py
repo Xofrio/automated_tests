@@ -14,7 +14,6 @@ def browser(request):
     browser = None
     languages = ["ar", "ca", "cs", "da", "de", "en", "el", "es", "fi", "fr", "it",
                  "ko", "nl", "pl", "pt", "pt-br", "ro", "ru", "sk", "uk", "zh-hans"]
-
     if language and language in languages:
         options = Options()
         options.add_experimental_option('prefs', {'intl.accept_languages': language})
@@ -25,5 +24,4 @@ def browser(request):
     else:
         raise pytest.UsageError(f"\n--language should be indicated! List of supported languages:"
                                 f"\n{languages}")
-
     browser.quit()
